@@ -1,17 +1,16 @@
 package teamzesa.arthursystem;
 
+import org.bukkit.Bukkit;
+import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
+import teamzesa.pvp.PvpSystem;
 
-public final class ArthurSystem extends JavaPlugin {
+public final class ArthurSystem extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
-
+        Bukkit.getLogger().info("ArthurSystem Enable");
+        getServer().getPluginManager().registerEvents(new PvpSystem(),this);
     }
 
-    @Override
-    public void onDisable() {
-        // Plugin shutdown logic
-    }
 }
