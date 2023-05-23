@@ -9,7 +9,6 @@ public final class ArthurSystem extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
-        Bukkit.getLogger().info("ArthurSystem Enable");
         getServer().getPluginManager().registerEvents(new PvpSystem(),this);
     }
 
