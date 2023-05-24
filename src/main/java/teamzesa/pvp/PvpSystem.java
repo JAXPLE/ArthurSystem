@@ -20,7 +20,6 @@ public class PvpSystem implements Listener {
     @EventHandler
     public void reset(BlockBreakEvent e) { //정상체력 초기화
         if (moderChecker.CheckingUUID(e.getPlayer().getUniqueId())) {
-            System.out.println("통과");
             e.getPlayer().setHealthScale(20.0);
         }
     }

@@ -9,6 +9,7 @@ public final class ArthurSystem extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         getServer().getPluginManager().registerEvents(new PvpSystem(),this);
+
     }
 
 }

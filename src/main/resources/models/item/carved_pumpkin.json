@@ -1,0 +1,19 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/carved_pumpkin"
+	},
+	"overrides": [
+		{ "predicate": { "custom_model_data": 1}, "model": "item/hat/1"},
+		{ "predicate": { "custom_model_data": 2}, "model": "item/hat/2"},
+		{ "predicate": { "custom_model_data": 3}, "model": "item/hat/3"},
+		{ "predicate": { "custom_model_data": 4}, "model": "item/hat/4"},
+		{ "predicate": { "custom_model_data": 5}, "model": "item/hat/5"},
+		{ "predicate": { "custom_model_data": 6}, "model": "item/hat/6"},
+		{ "predicate": { "custom_model_data": 7}, "model": "item/hat/7"},
+		{ "predicate": { "custom_model_data": 8}, "model": "item/hat/8"},
+		{ "predicate": { "custom_model_data": 9}, "model": "item/hat/9"},
+		{ "predicate": { "custom_model_data": 10}, "model": "item/hat/10"},
+		{ "predicate": { "custom_model_data": 11}, "model": "item/hat/11"}
+	]
+}

@@ -1,0 +1,11 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/shield"
+	},
+	"overrides": [
+		{ "predicate": { "custom_model_data": 1}, "model": "item/shield/1"},
+		{ "predicate": { "custom_model_data": 2}, "model": "item/shield/2"},
+		{ "predicate": { "custom_model_data": 3}, "model": "item/shield/3"}
+	]
+}
