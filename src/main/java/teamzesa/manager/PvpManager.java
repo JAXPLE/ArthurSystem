@@ -16,18 +16,17 @@ public class PvpManager implements Listener {
         moderManager = ModerManager.getInstance();
     }
 
-    @EventHandler
+    /*@EventHandler
     public void reset(BlockBreakEvent e) { //정상체력 초기화
-        if (moderManager.CheckingUUID(e.getPlayer().getUniqueId())) {
+        if (moderManager.CheckingUUID(e.getPlayer().getUniqueId()))
             e.getPlayer().setHealthScale(20.0);
-        }
     }
 
     @EventHandler
     public void setFull(BlockPlaceEvent e) { //최대체력 초기화
         if (moderManager.CheckingUUID(e.getPlayer().getUniqueId()))
             e.getPlayer().setHealthScale(60.0);
-    }
+    }*/
 
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onPlayerDeath(PlayerDeathEvent e) {
