@@ -1,4 +1,4 @@
-package teamzesa.pvp;
+package teamzesa.manager;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -7,26 +7,25 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.entity.PlayerDeathEvent;
-import teamzesa.moder.ModerChecker;
 
 
-public class PvpSystem implements Listener {
-    private ModerChecker moderChecker;
+public class PvpManager implements Listener {
+    private ModerManager moderManager;
 
-    public PvpSystem() {
-        moderChecker = ModerChecker.getInstance();
+    public PvpManager() {
+        moderManager = ModerManager.getInstance();
     }
 
     @EventHandler
     public void reset(BlockBreakEvent e) { //정상체력 초기화
-        if (moderChecker.CheckingUUID(e.getPlayer().getUniqueId())) {
+        if (moderManager.CheckingUUID(e.getPlayer().getUniqueId())) {
             e.getPlayer().setHealthScale(20.0);
         }
     }
 
     @EventHandler
     public void setFull(BlockPlaceEvent e) { //최대체력 초기화
-        if (moderChecker.CheckingUUID(e.getPlayer().getUniqueId()))
+        if (moderManager.CheckingUUID(e.getPlayer().getUniqueId()))
             e.getPlayer().setHealthScale(60.0);
     }
 
