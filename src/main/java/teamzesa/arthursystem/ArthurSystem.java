@@ -1,5 +1,6 @@
 package teamzesa.arthursystem;
 
+import org.bukkit.Bukkit;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 import teamzesa.manager.CommandManager;
@@ -13,9 +14,8 @@ public final class ArthurSystem extends JavaPlugin implements Listener {
     public void onEnable() {
         this.getServer().getPluginManager().registerEvents(new PvpManager(),this);
 
-        ItemManager.customItem(this);
-
-        this.getCommand("test").setExecutor(new CommandManager());
+        Bukkit.getPluginCommand("test").setExecutor(new CommandManager());
+//        ItemManager.customItem(this);
     }
 
 }

@@ -4,5 +4,5 @@ main: teamzesa.arthursystem.ArthurSystem
 api-version: 1.19
 commands:
   test:
-    description: Test Command System Out
-    usage: /<command>
+    description: This is a demo command.
+    usage: /<command> [player]
