@@ -14,7 +14,7 @@ public final class ArthurSystem extends JavaPlugin implements Listener {
     public void onEnable() {
         this.getServer().getPluginManager().registerEvents(new PvpManager(),this);
 
-        Bukkit.getPluginCommand("totem").setExecutor(new StreamTotemStacking());
+        Bukkit.getPluginCommand("totem").setExecutor(new TotemStacking());
 
 //        ItemManager.customItem(this);
     }
