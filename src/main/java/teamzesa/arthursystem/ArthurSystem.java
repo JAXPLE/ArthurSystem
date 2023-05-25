@@ -3,8 +3,8 @@ package teamzesa.arthursystem;
 import org.bukkit.Bukkit;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
-import teamzesa.manager.CommandManager;
-import teamzesa.manager.ItemManager;
+import teamzesa.command.StreamTotemStacking;
+import teamzesa.command.TotemStacking;
 import teamzesa.manager.PvpManager;
 
 
@@ -14,7 +14,8 @@ public final class ArthurSystem extends JavaPlugin implements Listener {
     public void onEnable() {
         this.getServer().getPluginManager().registerEvents(new PvpManager(),this);
 
-        Bukkit.getPluginCommand("test").setExecutor(new CommandManager());
+        Bukkit.getPluginCommand("totem").setExecutor(new StreamTotemStacking());
+
 //        ItemManager.customItem(this);
     }
 
