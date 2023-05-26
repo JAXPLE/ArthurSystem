@@ -1,9 +1,9 @@
 # ArthurSystem
 
 ## Custom List
-* steelLife `5/21 ~ 23` ✅
+* SteelLife `5/21 ~ 23` ✅
 * CommandSet  `5/24 ~ 25` ✅
-* TotemStacking (Need Refactoring) `5/25 ~ 26` ✅ 
+* TotemStacking (Need Refactoring) `5/25` ✅ 
 * ADD Resource Pack 👨‍💻
 * Apply EnchantBook Any Stuff 👨‍💻
 * Raid Event Coordinate Announcement 👨‍💻
@@ -14,7 +14,7 @@
 * mcMMO ✅
 
 ## Logo
-* 1982 * 80
+* 1982 * 80 `5/26` 👨‍💻
 
 ## Poster
 * n * n
