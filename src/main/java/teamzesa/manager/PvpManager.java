@@ -33,13 +33,16 @@ public class PvpManager implements Listener {
         Player killed = e.getEntity();
         Player killer = killed.getKiller();
 
+        if (killer == null)
+            return;
+
         if (killed.getHealthScale() <= 2.0)
             return;
 
         if (killer.getHealthScale() >= 60.0)
             return;
 
-        if (killer != null && killed != killer) {
+        if (killed != killer) {
             talking(killed,killer);
             killed.setHealthScale(killed.getHealthScale() - 2.0);
             killer.setHealthScale(killer.getHealthScale() + 2.0);
