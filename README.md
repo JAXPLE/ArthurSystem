@@ -9,12 +9,13 @@
 * ADD Resource Pack 👨‍💻
 
 ## Plugin List
-* Anti Fly
+* Anti Fly ? or SpeedLimit? 👨‍💻
 * OldCombatSystem ✅
 * mcMMO ✅
 
 ## Logo
-* 1982 * 80 `5/27` 👨‍💻
+* 1982 * 80 `5/28` 👨‍💻
 
 ## Poster
-* n * n `5/27` 👨‍💻
+* n * n `5/28` 👨‍💻
+* 
