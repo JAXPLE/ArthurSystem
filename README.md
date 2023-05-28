@@ -1,6 +1,6 @@
 # ArthurSystem
 
-## Custom List
+>### Custom Plugin List
 * SteelLife `5/21 ~ 23` ✅
 * CommandSet  `5/24 ~ 25` ✅
 * TotemStacking (Need Refactoring) `5/25` ✅ 
@@ -9,15 +9,16 @@
 * Apply EnchantBook Any Stuff 👨‍💻
 * ADD Resource Pack 👨‍💻
 
-## Plugin List
+>### Plugin List
 * Anti Fly ? or SpeedLimit? 👨‍💻
 * mcMMO ✅
 
-## Logo
+>### Logo
 * 1982 * 80 `5/28` 👨‍💻
 
-## Poster
+>### Poster
 * n * n `5/28` 👨‍💻
 
-## Branch
- > git branch
+>### Branch
+ 
+* git branch
