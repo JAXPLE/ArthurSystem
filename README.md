@@ -10,7 +10,7 @@
 * ADD Resource Pack 👨‍💻
 
 >### Plugin List
-* Anti Fly ? or SpeedLimit? 👨‍💻
+* AntiFly ? or SpeedLimit? 👨‍💻
 * mcMMO ✅
 
 >### Logo
