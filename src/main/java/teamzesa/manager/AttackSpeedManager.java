@@ -3,6 +3,7 @@ package teamzesa.manager;
 import com.sun.tools.javac.Main;
 import org.bukkit.attribute.Attribute;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
@@ -22,7 +23,7 @@ public class AttackSpeedManager implements Listener {
         return attackSpeedManager;
     }
 
-    @EventHandler
+    @EventHandler(priority = EventPriority.HIGHEST)
     public void onJoin(PlayerJoinEvent e) {
 //        What to set the attack speed to. Default for 1.9 is 4, at least 40 is needed for no cooldown.
         Objects.requireNonNull(e.getPlayer().getAttribute(Attribute.GENERIC_ATTACK_SPEED)).setBaseValue(40);
