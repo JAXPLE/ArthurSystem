@@ -18,4 +18,6 @@
 
 ## Poster
 * n * n `5/28` 👨‍💻
-* 
+
+## Branch
+ > git branch
