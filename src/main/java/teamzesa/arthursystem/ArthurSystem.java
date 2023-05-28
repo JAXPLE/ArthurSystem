@@ -5,6 +5,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import teamzesa.command.TotemStacking;
+import teamzesa.manager.AttackSpeedManager;
 import teamzesa.manager.NetherManager;
 import teamzesa.manager.PvpManager;
 import teamzesa.manager.RaidManager;
@@ -23,10 +24,10 @@ public final class ArthurSystem extends JavaPlugin implements Listener {
         this.pm.registerEvents(new PvpManager(),this);
         this.pm.registerEvents(new RaidManager(),this);
         this.pm.registerEvents(new NetherManager(),this);
+        this.pm.registerEvents(AttackSpeedManager.getInstance(),this);
 
         Bukkit.getPluginCommand("totem").setExecutor(new TotemStacking());
 
 //        ItemManager.customItem(this);
     }
-
 }
