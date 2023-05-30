@@ -10,8 +10,9 @@
 * ADD Resource Pack 👨‍💻
 
 > ### Plugin List
-* SpeedLimit 👨‍💻
+* spartan ✅
 * mcMMO ✅
+* vehicle ✅
 
 > ### Logo
 * MineList
@@ -29,3 +30,4 @@
 > ### release
 * `5/29` Test release ✅
 * `5/30` release 👨‍💻
+* [노션 기획안 바로가기](https://jaxple.notion.site/d1ef58aa889d4b8ba1342fc09c0249b4)
