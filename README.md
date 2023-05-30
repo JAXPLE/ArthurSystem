@@ -22,5 +22,10 @@
 ![serverIcon](https://github.com/JAXPLE/ArthurSystem/assets/114869036/f06cacde-d4f7-48a6-866d-43976a6f90fb)
 * Server-icon
 ![server-icon](https://github.com/JAXPLE/ArthurSystem/assets/114869036/a05d71aa-72df-4889-9761-065e7fda6751)
+
 > ### git
 * git branch
+
+> ### release
+* `5/29` Test release ✅
+* `5/30` release 👨‍💻
