@@ -10,8 +10,9 @@
 * ADD Resource Pack 👨‍💻
 
 > ### Plugin List
-* SpeedLimit 👨‍💻
+* spartan ✅
 * mcMMO ✅
+* vehicle ✅
 
 > ### Logo
 * MineList
