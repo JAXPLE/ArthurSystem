@@ -19,8 +19,8 @@ public final class ArthurSystem extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         this.pm.registerEvents(AttackSpeedManager.getInstance(),this);
-        this.pm.registerEvents(UserManager.getInstance(),this);
-        this.pm.registerEvents(new PvpManager(),this);
+//        this.pm.registerEvents(UserManager.getInstance(),this);
+//        this.pm.registerEvents(new PvpManager(),this);
         this.pm.registerEvents(new RaidManager(),this);
         this.pm.registerEvents(new NetherManager(),this);
 
