@@ -1,5 +1,6 @@
 package teamzesa.manager;
 
+import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -8,12 +9,19 @@ import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.entity.PlayerDeathEvent;
 
+import java.io.File;
+import java.util.Map;
+import java.util.UUID;
+
 
 public class PvpManager implements Listener {
     private ModerManager moderManager;
+    private UserManager userManager;
+    private Map<UUID,Double> users;
 
     public PvpManager() {
         moderManager = ModerManager.getInstance();
+        userManager = UserManager.getInstance();
     }
 
     /*@EventHandler
@@ -44,8 +52,12 @@ public class PvpManager implements Listener {
 
         if (killed != killer) {
             talking(killed,killer);
+
             killed.setHealthScale(killed.getHealthScale() - 2.0);
             killer.setHealthScale(killer.getHealthScale() + 2.0);
+
+            userManager.updatePlayerHealth(killed.getUniqueId(),killed.getHealthScale());
+            userManager.updatePlayerHealth(killer.getUniqueId(),killer.getHealthScale());
         }
     }
 
