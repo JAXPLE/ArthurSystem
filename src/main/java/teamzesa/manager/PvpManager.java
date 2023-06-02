@@ -56,8 +56,8 @@ public class PvpManager implements Listener {
             killed.setHealthScale(killed.getHealthScale() - 2.0);
             killer.setHealthScale(killer.getHealthScale() + 2.0);
 
-            userManager.updatePlayerHealth(killed.getUniqueId(),killed.getHealthScale());
-            userManager.updatePlayerHealth(killer.getUniqueId(),killer.getHealthScale());
+//            userManager.updatePlayerHealth(killed.getUniqueId(),killed.getHealthScale());
+//            userManager.updatePlayerHealth(killer.getUniqueId(),killer.getHealthScale());
         }
     }
 
