@@ -24,12 +24,17 @@ public class UserManager implements Listener {
     }
 
     public void updatePlayerHealth(UUID playerUUID, double healthScale) {
-        userInfo.put(playerUUID, healthScale);
+        userInfo.replace(playerUUID, healthScale);
     }
 
     @EventHandler
     public void onJoin(PlayerJoinEvent e) {
         Player p = e.getPlayer();
+        UUID uuid = e.getPlayer().getUniqueId();
+
+        if (userInfo.get(uuid.toString()) == null)
+            userInfo.put(uuid,20.0);
+
         p.setHealthScale(userInfo.get(p.getUniqueId()));
     }
 }
