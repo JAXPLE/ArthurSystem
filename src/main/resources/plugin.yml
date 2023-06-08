@@ -1,7 +1,7 @@
 name: ArthurSystem
 version: '${version}'
 main: teamzesa.arthursystem.ArthurSystem
-api-version: 1.19
+api-version: 1.20
 commands:
   totem:
     description: 토템을 합칩니다.
