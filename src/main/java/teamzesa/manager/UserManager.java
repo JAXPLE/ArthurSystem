@@ -1,17 +1,24 @@
 package teamzesa.manager;
 
+import com.google.gson.Gson;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.plugin.java.JavaPlugin;
+import teamzesa.arthursystem.ArthurSystem;
 
+import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
 public class UserManager implements Listener {
     private static UserManager instance = new UserManager();
+    private static final String FILE = "playerHealthData.yml";
     private Map<UUID, Double> userInfo;
+    private File file;
+
 
     private UserManager() {
         userInfo = new HashMap<>();
@@ -36,5 +43,14 @@ public class UserManager implements Listener {
             userInfo.put(uuid,20.0);
 
         p.setHealthScale(userInfo.get(p.getUniqueId()));
+    }
+
+    public void savePlayerData() {
+        Gson gson = new Gson();
+        String data = gson.toJson(userInfo);
+        file = new File(data);
+
+        ArthurSystem arthurSystem = ArthurSystem.getPlugin(ArthurSystem.class);
+        arthurSystem.saveConfig();
     }
 }
