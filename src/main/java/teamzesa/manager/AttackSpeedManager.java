@@ -10,10 +10,12 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import java.util.Objects;
 
 public class AttackSpeedManager implements Listener {
-    private static AttackSpeedManager attackSpeedManager = new AttackSpeedManager();
+    private static AttackSpeedManager attackSpeedManager;
     private Main plugin;
 
-    private AttackSpeedManager() {}
+    private AttackSpeedManager() {
+        attackSpeedManager = new AttackSpeedManager();
+    }
 
     public static AttackSpeedManager getInstance() {
         if (attackSpeedManager == null) {
