@@ -51,6 +51,6 @@ public class UserManager implements Listener {
         Gson gson = new Gson();
         String data = gson.toJson(userInfo);
         file = new File(data);
-        FileWriter fileWriter = new FileWriter(file,);
+//        FileWriter fileWriter = new FileWriter(file,);
     }
 }
