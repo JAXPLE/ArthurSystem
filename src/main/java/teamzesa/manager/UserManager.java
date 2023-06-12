@@ -9,8 +9,11 @@ import org.bukkit.plugin.java.JavaPlugin;
 import teamzesa.arthursystem.ArthurSystem;
 
 import java.io.File;
+import java.io.FileWriter;
+import java.io.UTFDataFormatException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 import java.util.UUID;
 
 public class UserManager implements Listener {
@@ -18,7 +21,6 @@ public class UserManager implements Listener {
     private static final String FILE = "playerHealthData.yml";
     private Map<UUID, Double> userInfo;
     private File file;
-
 
     private UserManager() {
         userInfo = new HashMap<>();
@@ -45,12 +47,10 @@ public class UserManager implements Listener {
         p.setHealthScale(userInfo.get(p.getUniqueId()));
     }
 
-    public void savePlayerData() {
+    public void savePlayerData() throws Exception{
         Gson gson = new Gson();
         String data = gson.toJson(userInfo);
         file = new File(data);
-
-        ArthurSystem arthurSystem = ArthurSystem.getPlugin(ArthurSystem.class);
-        arthurSystem.saveConfig();
+        FileWriter fileWriter = new FileWriter(file,);
     }
 }
