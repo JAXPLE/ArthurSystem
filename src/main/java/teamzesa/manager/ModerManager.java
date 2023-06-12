@@ -9,11 +9,11 @@ public class ModerManager {
     private Map<UUID, UUID> moderatorList = new HashMap<>();
 
     private ModerManager() {
-        UUID Jaxple = UUID.fromString("27d84b4f-5991-4001-89d5-0fdfd3374a3d");
-        UUID gunBunJun = UUID.fromString("7e57dd28-bdba-4312-84ea-2da58cd6e598");
+        UUID JAXPLE = UUID.fromString("27d84b4f-5991-4001-89d5-0fdfd3374a3d");
+        UUID GUNBUNJUL = UUID.fromString("7e57dd28-bdba-4312-84ea-2da58cd6e598");
 
-        this.moderatorList.put(Jaxple, Jaxple);
-        this.moderatorList.put(gunBunJun, gunBunJun);
+        this.moderatorList.put(JAXPLE, JAXPLE);
+        this.moderatorList.put(GUNBUNJUL, GUNBUNJUL);
     }
 
     public static synchronized ModerManager getInstance() {
