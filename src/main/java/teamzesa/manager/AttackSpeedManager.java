@@ -14,14 +14,11 @@ public class AttackSpeedManager implements Listener {
     private Main plugin;
 
     private AttackSpeedManager() {
-        attackSpeedManager = new AttackSpeedManager();
     }
 
     public static AttackSpeedManager getInstance() {
-        if (attackSpeedManager == null) {
+        if (attackSpeedManager == null)
             attackSpeedManager = new AttackSpeedManager();
-            return attackSpeedManager;
-        }
         return attackSpeedManager;
     }
 
